@@ -65,11 +65,11 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
       <h1 className="header">{title}</h1>
 
       <div className="w-full max-w-md">
-        <Link to="/" className="nav-button w-full block">
+        <Link to="/" className="nav-button w-full block h-[52px] flex items-center justify-center">
           Home
         </Link>
 
-        <Link to="/pdf-files" className="nav-button w-full block mb-8">
+        <Link to="/pdf-files" className="nav-button w-full block h-[52px] flex items-center justify-center mb-8">
           PDF Files
         </Link>
 
@@ -78,14 +78,24 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
           value={searchCode}
           onChange={(e) => handleSearch(e.target.value)}
           placeholder="Enter error code"
-          className="w-full nav-button mb-4 text-center"
+          className="w-full nav-button mb-4 text-center h-[52px]"
         />
 
         {errorDetails && (
-          <Card className="p-6 bg-secondary/50 text-center">
-            <h2 className="text-lg font-semibold mb-4">Error Code: {errorDetails.code}</h2>
-            <p className="mb-2">Meaning: {errorDetails.meaning}</p>
-            <p>Solution: {errorDetails.solution}</p>
+          <Card className="p-6 bg-secondary/50">
+            <div className="space-y-4 text-center">
+              <h2 className="text-lg font-semibold border-b pb-2">Error Code: {errorDetails.code}</h2>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold mb-1">Meaning:</h3>
+                  <p>{errorDetails.meaning}</p>
+                </div>
+                <div className="border-t pt-4">
+                  <h3 className="font-semibold mb-1">Solution:</h3>
+                  <p>{errorDetails.solution}</p>
+                </div>
+              </div>
+            </div>
           </Card>
         )}
       </div>
