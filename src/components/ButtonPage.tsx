@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Moon, Sun, Home } from 'lucide-react';
+import { Moon, Sun } from 'lucide-react';
 import { Card } from './ui/card';
 import { Input } from './ui/input';
 
@@ -62,11 +62,11 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
         {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
       </button>
 
-      <Link to="/" className="nav-button w-full max-w-md mb-4">
+      <h1 className="header">{title}</h1>
+
+      <Link to="/" className="nav-button w-full max-w-md">
         Home
       </Link>
-
-      <h1 className="header">{title}</h1>
 
       <Link to="/pdf-files" className="nav-button w-full max-w-md mb-8">
         PDF Files
@@ -78,7 +78,7 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
           value={searchCode}
           onChange={(e) => handleSearch(e.target.value)}
           placeholder="Enter error code"
-          className="mb-4 text-center"
+          className="nav-button mb-4 text-center"
         />
 
         {errorDetails && (
