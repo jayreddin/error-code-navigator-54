@@ -78,7 +78,7 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
           value={searchCode}
           onChange={(e) => handleSearch(e.target.value)}
           placeholder="Enter error code"
-          className="w-full max-w-md nav-button mb-4 text-center"
+          className="nav-button mb-4 text-center"
         />
 
         {errorDetails && (
