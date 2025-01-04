@@ -64,12 +64,12 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
 
       <h1 className="header">{title}</h1>
 
-      <div className="w-full max-w-md">
-        <Link to="/" className="nav-button w-full block h-[52px] flex items-center justify-center">
+      <div className="w-full max-w-md space-y-4">
+        <Link to="/" className="nav-button block">
           Home
         </Link>
 
-        <Link to="/pdf-files" className="nav-button w-full block h-[52px] flex items-center justify-center mb-8">
+        <Link to="/pdf-files" className="nav-button block">
           PDF Files
         </Link>
 
@@ -78,11 +78,11 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
           value={searchCode}
           onChange={(e) => handleSearch(e.target.value)}
           placeholder="Enter error code"
-          className="w-full nav-button mb-4 text-center h-[52px]"
+          className="nav-button text-lg font-bold text-center"
         />
 
         {errorDetails && (
-          <Card className="p-6 bg-secondary/50">
+          <Card className="p-6 bg-secondary/50 border-[hsl(var(--button-border))] border">
             <div className="space-y-4 text-center">
               <h2 className="text-lg font-semibold border-b pb-2">Error Code: {errorDetails.code}</h2>
               <div className="space-y-4">
