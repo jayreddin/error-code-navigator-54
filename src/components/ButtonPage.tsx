@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Moon, Sun } from 'lucide-react';
 import { Card } from './ui/card';
 import { Input } from './ui/input';
@@ -20,25 +20,23 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
   );
   const [searchCode, setSearchCode] = useState('');
   const [errorDetails, setErrorDetails] = useState<ErrorCode[]>([]);
+  const [errorCodes, setErrorCodes] = useState<Record<string, ErrorCode>>({});
+  const location = useLocation();
 
-  // Mock error codes - in a real app, this would come from a database or API
-  const mockErrorCodes: Record<string, ErrorCode> = {
-    '51': {
-      code: '51',
-      meaning: 'Air In sensor error',
-      solution: 'Check sensor. Replace if necessary'
-    },
-    '52': {
-      code: '52',
-      meaning: 'Air Out sensor error',
-      solution: 'Check sensor. Replace if necessary'
-    },
-    '53': {
-      code: '53',
-      meaning: 'Evaporator sensor error',
-      solution: 'Check sensor. Replace if necessary'
-    }
-  };
+  useEffect(() => {
+    const loadErrorCodes = async () => {
+      try {
+        // Get the current route name from the location
+        const routeName = location.pathname.slice(1);
+        const response = await import(`../data/error-codes/${routeName}.json`);
+        setErrorCodes(response.default);
+      } catch (error) {
+        console.error('Error loading error codes:', error);
+      }
+    };
+
+    loadErrorCodes();
+  }, [location]);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -56,7 +54,7 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
   const handleSearch = (value: string) => {
     setSearchCode(value);
     if (value) {
-      const matchingCodes = Object.values(mockErrorCodes).filter(error => 
+      const matchingCodes = Object.values(errorCodes).filter(error => 
         error.code.startsWith(value)
       );
       setErrorDetails(matchingCodes);

@@ -1,0 +1,27 @@
+{
+  "51": {
+    "code": "51",
+    "meaning": "Air In sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "52": {
+    "code": "52",
+    "meaning": "Air Out sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "53": {
+    "code": "53",
+    "meaning": "Evaporator sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "54": {
+    "code": "54",
+    "meaning": "Compressor discharge temperature sensor error",
+    "solution": "Check sensor connections and replace if faulty"
+  },
+  "55": {
+    "code": "55",
+    "meaning": "Water temperature sensor error",
+    "solution": "Verify sensor connections and replace if damaged"
+  }
+}
