@@ -33,6 +33,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/pdf-files" element={<ButtonPage title="PDF Files" />} />
           {buttonRoutes.map((route, index) => (
             <Route key={index} path={route.path} element={route.element} />
           ))}

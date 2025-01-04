@@ -1,16 +1,34 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Moon, Sun, Home } from 'lucide-react';
+import { Card } from './ui/card';
+import { Input } from './ui/input';
 
 interface ButtonPageProps {
   title: string;
+}
+
+interface ErrorCode {
+  code: string;
+  meaning: string;
+  solution: string;
 }
 
 const ButtonPage = ({ title }: ButtonPageProps) => {
   const [theme, setTheme] = useState<'light' | 'dark'>(
     localStorage.getItem('theme') as 'light' | 'dark' || 'light'
   );
-  const location = useLocation();
+  const [searchCode, setSearchCode] = useState('');
+  const [errorDetails, setErrorDetails] = useState<ErrorCode | null>(null);
+
+  // Mock error codes - in a real app, this would come from a database or API
+  const mockErrorCodes: Record<string, ErrorCode> = {
+    '10': {
+      code: '10',
+      meaning: 'Water Pressure low (<0.8bar)',
+      solution: 'Increase water pressure'
+    }
+  };
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -25,6 +43,15 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
+  const handleSearch = (value: string) => {
+    setSearchCode(value);
+    if (mockErrorCodes[value]) {
+      setErrorDetails(mockErrorCodes[value]);
+    } else {
+      setErrorDetails(null);
+    }
+  };
+
   return (
     <div className="page-container">
       <button
@@ -35,14 +62,32 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
         {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
       </button>
 
-      <Link to="/" className="home-button">
-        <Home size={20} />
+      <Link to="/" className="nav-button w-full max-w-md mb-4">
+        Home
       </Link>
 
       <h1 className="header">{title}</h1>
 
-      <div className="mt-8 text-center">
-        <p>Content for {title} will be added here.</p>
+      <Link to="/pdf-files" className="nav-button w-full max-w-md mb-8">
+        PDF Files
+      </Link>
+
+      <div className="w-full max-w-md">
+        <Input
+          type="text"
+          value={searchCode}
+          onChange={(e) => handleSearch(e.target.value)}
+          placeholder="Enter error code"
+          className="mb-4 text-center"
+        />
+
+        {errorDetails && (
+          <Card className="p-6 bg-secondary/50">
+            <h2 className="text-lg font-semibold mb-4">Error Code: {errorDetails.code}</h2>
+            <p className="mb-2">Meaning: {errorDetails.meaning}</p>
+            <p>Solution: {errorDetails.solution}</p>
+          </Card>
+        )}
       </div>
     </div>
   );
