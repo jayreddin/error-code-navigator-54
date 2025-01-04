@@ -1,25 +1,16 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Moon, Sun } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { Moon, Sun, Home } from 'lucide-react';
 
-const buttonNames = [
-  "Joule Victorum",
-  "Joule Samsung",
-  "Joule Modular Air",
-  "DeDietrich Strateo",
-  "LG Thermia",
-  "Hitachi Yutaki",
-  "Panasonic Aquarea",
-  "Grant Areona",
-  "Itec Thermia",
-  "Smart Control",
-  "System Status"
-];
+interface ButtonPageProps {
+  title: string;
+}
 
-const Index = () => {
+const ButtonPage = ({ title }: ButtonPageProps) => {
   const [theme, setTheme] = useState<'light' | 'dark'>(
     localStorage.getItem('theme') as 'light' | 'dark' || 'light'
   );
+  const location = useLocation();
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -43,22 +34,18 @@ const Index = () => {
       >
         {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
       </button>
-      
-      <h1 className="header">Error Code Search</h1>
-      
-      <div className="button-container">
-        {buttonNames.map((name, index) => (
-          <Link
-            key={index}
-            to={`/${name.toLowerCase().replace(/\s+/g, '-')}`}
-            className="nav-button"
-          >
-            {name}
-          </Link>
-        ))}
+
+      <Link to="/" className="home-button">
+        <Home size={20} />
+      </Link>
+
+      <h1 className="header">{title}</h1>
+
+      <div className="mt-8 text-center">
+        <p>Content for {title} will be added here.</p>
       </div>
     </div>
   );
 };
 
-export default Index;
+export default ButtonPage;
