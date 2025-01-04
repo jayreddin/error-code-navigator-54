@@ -1,0 +1,17 @@
+{
+  "111": {
+    "code": "111",
+    "meaning": "Water outlet temperature error",
+    "solution": "Check water outlet sensor and flow"
+  },
+  "112": {
+    "code": "112",
+    "meaning": "High pressure protection",
+    "solution": "Verify system pressure and blockages"
+  },
+  "113": {
+    "code": "113",
+    "meaning": "Refrigerant leakage",
+    "solution": "Check for refrigerant leaks and repair"
+  }
+}

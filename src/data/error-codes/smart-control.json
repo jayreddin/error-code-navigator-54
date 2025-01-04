@@ -1,0 +1,17 @@
+{
+  "141": {
+    "code": "141",
+    "meaning": "Network connection error",
+    "solution": "Check network connectivity and settings"
+  },
+  "142": {
+    "code": "142",
+    "meaning": "Sensor communication error",
+    "solution": "Verify sensor connections and wiring"
+  },
+  "143": {
+    "code": "143",
+    "meaning": "Control panel error",
+    "solution": "Reset control panel or check for updates"
+  }
+}

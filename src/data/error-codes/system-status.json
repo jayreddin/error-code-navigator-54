@@ -1,0 +1,17 @@
+{
+  "151": {
+    "code": "151",
+    "meaning": "System pressure warning",
+    "solution": "Check system pressure and adjust if needed"
+  },
+  "152": {
+    "code": "152",
+    "meaning": "System temperature warning",
+    "solution": "Verify system temperature and operation"
+  },
+  "153": {
+    "code": "153",
+    "meaning": "General system fault",
+    "solution": "Run system diagnostic and check error logs"
+  }
+}

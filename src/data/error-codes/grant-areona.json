@@ -1,0 +1,17 @@
+{
+  "121": {
+    "code": "121",
+    "meaning": "Flow temperature sensor fault",
+    "solution": "Check flow temperature sensor"
+  },
+  "122": {
+    "code": "122",
+    "meaning": "Return temperature sensor fault",
+    "solution": "Inspect return temperature sensor"
+  },
+  "123": {
+    "code": "123",
+    "meaning": "Low pressure fault",
+    "solution": "Check system pressure and add refrigerant if needed"
+  }
+}

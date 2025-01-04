@@ -1,0 +1,17 @@
+{
+  "201": {
+    "code": "201",
+    "meaning": "PDF file corrupted",
+    "solution": "Try downloading the file again"
+  },
+  "202": {
+    "code": "202",
+    "meaning": "PDF not found",
+    "solution": "Check file path and permissions"
+  },
+  "203": {
+    "code": "203",
+    "meaning": "PDF access denied",
+    "solution": "Verify user permissions and login status"
+  }
+}

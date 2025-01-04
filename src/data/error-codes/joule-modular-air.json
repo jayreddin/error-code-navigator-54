@@ -1,0 +1,17 @@
+{
+  "71": {
+    "code": "71",
+    "meaning": "Fan motor error",
+    "solution": "Check fan motor and replace if faulty"
+  },
+  "72": {
+    "code": "72",
+    "meaning": "Indoor air sensor fault",
+    "solution": "Inspect and replace indoor air sensor if needed"
+  },
+  "73": {
+    "code": "73",
+    "meaning": "Module communication error",
+    "solution": "Verify module connections and wiring"
+  }
+}

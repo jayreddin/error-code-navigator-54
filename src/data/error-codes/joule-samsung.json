@@ -1,0 +1,17 @@
+{
+  "61": {
+    "code": "61",
+    "meaning": "Communication error with outdoor unit",
+    "solution": "Check communication cables between indoor and outdoor units"
+  },
+  "62": {
+    "code": "62",
+    "meaning": "Outdoor unit PCB error",
+    "solution": "Check outdoor unit PCB and replace if necessary"
+  },
+  "63": {
+    "code": "63",
+    "meaning": "Compressor startup failure",
+    "solution": "Check compressor connections and wiring"
+  }
+}

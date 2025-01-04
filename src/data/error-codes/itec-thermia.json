@@ -1,0 +1,17 @@
+{
+  "131": {
+    "code": "131",
+    "meaning": "Compressor temperature too high",
+    "solution": "Check compressor cooling and operation"
+  },
+  "132": {
+    "code": "132",
+    "meaning": "Evaporator temperature sensor error",
+    "solution": "Verify evaporator sensor connections"
+  },
+  "133": {
+    "code": "133",
+    "meaning": "Communication error",
+    "solution": "Check communication cables and connections"
+  }
+}

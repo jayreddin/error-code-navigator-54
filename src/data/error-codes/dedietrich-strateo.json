@@ -1,0 +1,17 @@
+{
+  "81": {
+    "code": "81",
+    "meaning": "Water pressure low",
+    "solution": "Check system pressure and add water if needed"
+  },
+  "82": {
+    "code": "82",
+    "meaning": "Flow switch error",
+    "solution": "Verify water flow and check flow switch"
+  },
+  "83": {
+    "code": "83",
+    "meaning": "DHW sensor fault",
+    "solution": "Inspect DHW sensor and replace if necessary"
+  }
+}

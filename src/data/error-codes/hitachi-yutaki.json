@@ -1,0 +1,17 @@
+{
+  "101": {
+    "code": "101",
+    "meaning": "Compressor overload",
+    "solution": "Check compressor operation and cooling"
+  },
+  "102": {
+    "code": "102",
+    "meaning": "Defrost sensor error",
+    "solution": "Inspect defrost sensor and connections"
+  },
+  "103": {
+    "code": "103",
+    "meaning": "4-way valve error",
+    "solution": "Check 4-way valve operation and wiring"
+  }
+}
