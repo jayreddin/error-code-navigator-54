@@ -64,25 +64,25 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
 
       <h1 className="header">{title}</h1>
 
-      <Link to="/" className="nav-button w-full max-w-md">
+      <Link to="/" className="nav-button">
         Home
       </Link>
 
-      <Link to="/pdf-files" className="nav-button w-full max-w-md mb-8">
+      <Link to="/pdf-files" className="nav-button mb-8">
         PDF Files
       </Link>
 
       <div className="w-full max-w-md">
         <Input
-          type="text"
+          type="number"
           value={searchCode}
           onChange={(e) => handleSearch(e.target.value)}
           placeholder="Enter error code"
-          className="w-full max-w-md nav-button mb-4 text-center"
+          className="w-full nav-button mb-4 text-center"
         />
 
         {errorDetails && (
-          <Card className="p-6 bg-secondary/50">
+          <Card className="p-6 bg-secondary/50 text-center">
             <h2 className="text-lg font-semibold mb-4">Error Code: {errorDetails.code}</h2>
             <p className="mb-2">Meaning: {errorDetails.meaning}</p>
             <p>Solution: {errorDetails.solution}</p>
