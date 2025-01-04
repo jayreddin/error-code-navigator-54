@@ -1,4 +1,14 @@
 {
+  "10": {
+    "code": "10",
+    "meaning": "Water Pressure low (<0.8bar)",
+    "solution": "Increase water pressure"
+  },
+  "11": {
+    "code": "11",
+    "meaning": "Replace filter",
+    "solution": "Air filter to be replaced"
+  },
   "51": {
     "code": "51",
     "meaning": "Air In sensor error",
@@ -16,12 +26,52 @@
   },
   "54": {
     "code": "54",
-    "meaning": "Compressor discharge temperature sensor error",
-    "solution": "Check sensor connections and replace if faulty"
+    "meaning": "Heating return sensor error",
+    "solution": "Check sensor. Replace if necessary"
   },
   "55": {
     "code": "55",
-    "meaning": "Water temperature sensor error",
-    "solution": "Verify sensor connections and replace if damaged"
+    "meaning": "Heating flow sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "56": {
+    "code": "56",
+    "meaning": "Hot gas sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "60": {
+    "code": "60",
+    "meaning": "Air flow sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "70": {
+    "code": "70",
+    "meaning": "Water pressure sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "80": {
+    "code": "80",
+    "meaning": "No Temp diff across Condensor",
+    "solution": "Check circulating pump operation or possible air in the system"
+  },
+  "81": {
+    "code": "81",
+    "meaning": "No Temp diff across Evaporator",
+    "solution": "Check fan operation or a possible blockage in the duct system"
+  },
+  "90": {
+    "code": "90",
+    "meaning": "Compressor locked (repeated error 80)",
+    "solution": "Remove error 80"
+  },
+  "94": {
+    "code": "94",
+    "meaning": "Compressor locked (repeated error 81)",
+    "solution": "Remove error 81"
+  },
+  "95": {
+    "code": "95",
+    "meaning": "Water pressure is critically low (<0.3bar)",
+    "solution": "Increase water pressure"
   }
 }

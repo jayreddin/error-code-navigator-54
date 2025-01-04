@@ -1,17 +1,232 @@
 {
-  "61": {
-    "code": "61",
-    "meaning": "Communication error with outdoor unit",
-    "solution": "Check communication cables between indoor and outdoor units"
+  "101": {
+    "code": "101",
+    "meaning": "Indoor unit communication error",
+    "solution": "Check the communication cable of indoor unit. Check the DC output voltage at the communication terminal."
   },
-  "62": {
-    "code": "62",
-    "meaning": "Outdoor unit PCB error",
-    "solution": "Check outdoor unit PCB and replace if necessary"
+  "102": {
+    "code": "102",
+    "meaning": "Indoor unit/outdoor unit communication time-out error: errors in more than 6 packets",
+    "solution": "Check the outdoor communication cable connection. Check DC output voltage and the communication terminal."
   },
-  "63": {
-    "code": "63",
-    "meaning": "Compressor startup failure",
-    "solution": "Check compressor connections and wiring"
+  "121": {
+    "code": "121",
+    "meaning": "Indoor temperature sensor (open/short error)",
+    "solution": "Check indoor unit room temperature sensor. Check indoor unit PCB connector CN41 (White)"
+  },
+  "122": {
+    "code": "122",
+    "meaning": "Indoor unit Eva in sensor (Open/Short)",
+    "solution": "Check indoor unit pipe sensor. Check indoor PCB connector CN41 (White)"
+  },
+  "128": {
+    "code": "128",
+    "meaning": "Indoor unit Eva in sensor disconnection",
+    "solution": "Check the disconnection of indoor unit pipe sensor."
+  },
+  "153": {
+    "code": "153",
+    "meaning": "Indoor floating switch secondary detection",
+    "solution": "Check indoor unit float sensor. Check indoor PCB connector CN5 (black)"
+  },
+  "202": {
+    "code": "202",
+    "meaning": "Indoor/outdoor communication error (1 min)",
+    "solution": "Check the communication connection between indoor and outdoor units. Check the power line and communication cable connection status."
+  },
+  "203": {
+    "code": "203",
+    "meaning": "Communication error between indoor/outdoor INVIMAIN <-> MICOM (1 min)",
+    "solution": "Check MAIN MICOM Check INVERTER MICOM"
+  },
+  "221": {
+    "code": "221",
+    "meaning": "Outdoor temperature sensor error",
+    "solution": "Check sensor connection status Check sensor location Check sensor resistance"
+  },
+  "237": {
+    "code": "237",
+    "meaning": "COND temperature sensor error",
+    "solution": "Check sensor connection status Check sensor location Check sensor resistance"
+  },
+  "251": {
+    "code": "251",
+    "meaning": "[Inverter] Emission temperature sensor error",
+    "solution": "Check sensor connection status Check sensor location Check sensor resistance"
+  },
+  "440": {
+    "code": "440",
+    "meaning": "Heating operation blocked",
+    "solution": "Check the operation setting state Check temperature sensor"
+  },
+  "458": {
+    "code": "458",
+    "meaning": "Outdoor fan 1 error",
+    "solution": "Check input power connection status Check the connection status between the motor and outdoor unit of PCB Check indoor/outdoor fuse"
+  },
+  "461": {
+    "code": "461",
+    "meaning": "[Inverter] Compressor startup error",
+    "solution": "Check the compressor connection status Check the resistance between different phases of the compressor"
+  },
+  "462": {
+    "code": "462",
+    "meaning": "[Inverter] Total current error / PFC over current error",
+    "solution": "Check the input power Check the coolant charging status Check the normal operation of outdoor fan"
+  },
+  "464": {
+    "code": "464",
+    "meaning": "[Inverter] IPM over current error",
+    "solution": "Check coolant charging Check the compressor connection status and normal operation Check the obstacles around the indoor and outdoor units Check whether the outdoor unit service valve is open Check whether the indoor/outdoor installation pipe/wiring are correct"
+  },
+  "465": {
+    "code": "465",
+    "meaning": "Compressor V limit error",
+    "solution": "Check the compressor connection status Check the resistance between different phases of the compressor"
+  },
+  "466": {
+    "code": "466",
+    "meaning": "DC LINK over/low voltage",
+    "solution": "Check input power Check AC power connection Restart in 3 minutes"
+  },
+  "467": {
+    "code": "467",
+    "meaning": "[Inverter] Compressor rotation error",
+    "solution": "Check the compressor connection status Check the resistance between different phases of the compressor"
+  },
+  "468": {
+    "code": "468",
+    "meaning": "[Inverter] Current sensor error",
+    "solution": "Check EEPROM DATA Check the normal operation of PCB"
+  },
+  "469": {
+    "code": "469",
+    "meaning": "[Inverter] DC LINK voltage sensor error",
+    "solution": "Check the input power connection Check the status of RY21 and R200 in the INVERTER PCB"
+  },
+  "471": {
+    "code": "471",
+    "meaning": "[Inverter] OTP error",
+    "solution": "Check EEPROM DATA Check the normal operation of PCB"
+  },
+  "475": {
+    "code": "475",
+    "meaning": "Outdoor fan 2 error",
+    "solution": "Check the input power connection status Check the connection status of the motor and the outdoor unit PCB Check the indoor/outdoor unit fuse"
+  },
+  "554": {
+    "code": "554",
+    "meaning": "Gas leak error",
+    "solution": "Check the coolant charging status Check the indoor EVA sensor Check if the outdoor unit service value is open Check that the indoor/outdoor installation pipe/wiring are correct"
+  },
+  "556": {
+    "code": "556",
+    "meaning": "Capacities not matched",
+    "solution": "Check the option code of the indoor unit"
+  },
+  "601": {
+    "code": "601",
+    "meaning": "Communication error between the indoor unit and wired remote controller",
+    "solution": "Check the connection wire between the indoor unit and the wired remote controller"
+  },
+  "602": {
+    "code": "602",
+    "meaning": "Communication error between the Master and Slave wired remote controllers",
+    "solution": "Check the option switch for defining the master and slave (only one master and one slave can exist)"
+  },
+  "606": {
+    "code": "606",
+    "meaning": "COM1/COM2 cross installation error",
+    "solution": "Check that wired remote controller is connected to the COM2 terminal of the indoor unit"
+  },
+  "607": {
+    "code": "607",
+    "meaning": "Communication error between the Master and Slave wired remote controllers.",
+    "solution": "Check the option switch for defining the master and slave (only one master and one slave can exist)"
+  },
+  "E177": {
+    "code": "E177",
+    "meaning": "Emergency stop",
+    "solution": "Indoor unit ($POUSPM kit) orders emergency stop. Check the indoor unit ($POUSPM kit)"
+  },
+  "E201": {
+    "code": "E201",
+    "meaning": "Control kit quantity is mismatched.",
+    "solution": "Control kit quantity must be matched with outdoor unit 1 by 1. Check the $POUSPM kit quantity. It must be 1EA."
+  },
+  "E403": {
+    "code": "E403",
+    "meaning": "Detection of outdoor freezing when compressor stops.",
+    "solution": "Outdoor unit (condenser) froze. Check condenser."
+  },
+  "E404": {
+    "code": "E404",
+    "meaning": "Protection of outdoor overload when compressor stops.",
+    "solution": "Compressor is overloaded. Please check same as E461 and check compressor when it starts."
+  },
+  "E416": {
+    "code": "E416",
+    "meaning": "Discharge temperature of a compressor in an outdoor unit is overheated.",
+    "solution": "Discharge temperature is overheated."
+  },
+  "E440": {
+    "code": "E440",
+    "meaning": "Heating operation is not available since the outdoor air temperature is over 35 degrees.",
+    "solution": "Check the outdoor temperature."
+  },
+  "E441": {
+    "code": "E441",
+    "meaning": "Cooling operation is not available since the outdoor air temperature is lower than -15 degrees.",
+    "solution": "Check the outdoor temperature."
+  },
+  "E465": {
+    "code": "E465",
+    "meaning": "Compressor overload error",
+    "solution": "Compressor is overloaded. Please check same as E461 and check compressor when it starts."
+  },
+  "E468": {
+    "code": "E468",
+    "meaning": "Current sensor error",
+    "solution": "Exchange INVERTER PBA."
+  },
+  "E471": {
+    "code": "E471",
+    "meaning": "Outdoor EEPROM error",
+    "solution": "EEPROM date is wrong. Exchange EEPROM or MAIN PBA. (This error doesn\u2019t occur in EMF 150-AM)"
+  },
+  "E474": {
+    "code": "E474",
+    "meaning": "IPM (IGBT Module) or PFCM temperature sensor error",
+    "solution": "Exchange INVERTER PBA."
+  },
+  "E484": {
+    "code": "E484",
+    "meaning": "PFC overload error",
+    "solution": "Check reactor located in control plate. If reactor is normal, exchange INVERTER PEA."
+  },
+  "E500": {
+    "code": "E500",
+    "meaning": "IPM is over heated",
+    "solution": "Check INVERTER PBA\u2019s temperature. Power off and cool down INVERTER P BA, and then restart the outdoor unit."
+  },
+  "E556": {
+    "code": "E556",
+    "meaning": "Capacity mismatching between indoor and outdoor",
+    "solution": "EEPROM data is wrong. Exchange EEPROM or MAIN PBA"
+  },
+  "E557": {
+    "code": "E557",
+    "meaning": "Option code miss matching among the indoors (only for DPM)",
+    "solution": "EEPROM data is wrong. (This error doesn\u2019t occur in EMF 150-AM)"
+  },
+  "E911": {
+    "code": "E911",
+    "meaning": "Emergency stop",
+    "solution": "Ensure flow sensor is fitted onto pipework and connected to Samsung PCB. Ensure flow rate is above 16 litres per minute. Ensure all air is removed from system. Check circulation pumps speed setting. Check zone valves are not sticking closed. Check direction of flow sensor on pipework. Check direction of pump on pipework. Check direction of Flow Meter on pipework."
+  },
+  "E912": {
+    "code": "E912",
+    "meaning": "Emergency stop",
+    "solution": "Check circulation pumps are not operating. Check flow sensor is installed on horizontal pipework. Ensure 150mm of horizontal pipework each side of flow sensor."
   }
 }

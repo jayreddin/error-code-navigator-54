@@ -19,10 +19,10 @@ const buttonRoutes = [
   "Grant Areona",
   "Itec Thermia",
   "Smart Control",
-  "System Status"
-].map(name => ({
-  path: `/${name.toLowerCase().replace(/\s+/g, '-')}`,
-  element: <ButtonPage title={name} />
+  "System Status",
+].map((name) => ({
+  path: `/${name.toLowerCase().replace(/\s+/g, "-")}`,
+  element: <ButtonPage title={name} />,
 }));
 
 const App = () => (

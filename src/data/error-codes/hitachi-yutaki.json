@@ -1,17 +1,384 @@
 {
-  "101": {
-    "code": "101",
-    "meaning": "Compressor overload",
-    "solution": "Check compressor operation and cooling"
-  },
-  "102": {
-    "code": "102",
-    "meaning": "Defrost sensor error",
-    "solution": "Inspect defrost sensor and connections"
-  },
-  "103": {
-    "code": "103",
-    "meaning": "4-way valve error",
-    "solution": "Check 4-way valve operation and wiring"
-  }
+  "Error Codes": [
+    {
+      "errorCode": "2",
+      "errorMeaning": "Activation of protection device (high pressure cut)",
+      "possibleSolution": "Activation of PSH, locked motor, abnormal operation in the power supply phase"
+    },
+    {
+      "errorCode": "3",
+      "errorMeaning": "Communication Transmission Alarm (Not outdoor unit detected)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "3",
+      "errorMeaning": "Lost communication with all slave YUTAKI Units",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "4",
+      "errorMeaning": "Abnormal transmission between inverter PCB and RASC unit PCB",
+      "possibleSolution": "Transmission failure between inverter PCBs. (Loose Connector, Wire Breaking, Blowout of Fuse)"
+    },
+    {
+      "errorCode": "5",
+      "errorMeaning": "Reception of abnormal operation code for detection of power source phase",
+      "possibleSolution": "Power source with abnormal wave pattern. Main power supply phase is reversely connected or one phase is not connected"
+    },
+    {
+      "errorCode": "6",
+      "errorMeaning": "Excessively low voltage or excessively high voltage for the inverter",
+      "possibleSolution": "Voltage drop in power supply. Incorrect wiring or insufficient capacity of power supply wiring"
+    },
+    {
+      "errorCode": "7",
+      "errorMeaning": "Decrease in discharge gas superheat",
+      "possibleSolution": "Excessive Refrigerant Charge, Failure of Thermistor, Incorrect Wiring, Incorrect Piping Connection, Expansion Valve Locking at Opened Position (Disconnected Connector)"
+    },
+    {
+      "errorCode": "8",
+      "errorMeaning": "Excessively high discharge gas temperature at the top of compressor",
+      "possibleSolution": "Insufficient refrigerant charge, refrigerant leakage. Expansion valve closed or clogged"
+    },
+    {
+      "errorCode": "11",
+      "errorMeaning": "Water inlet thermistor abnormally (THMwi)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "12",
+      "errorMeaning": "Water outlet thermistor abnormally (THMwo)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "13",
+      "errorMeaning": "Indoor Liquid Pipe Temp Thermistor Abnormality (THMl)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "14",
+      "errorMeaning": "Indoor Gas Pipe Temperature Thermistor Abnormality (THMg)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "15",
+      "errorMeaning": "Water Circuit 2 thermistor abnormally (THMwo2)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "16",
+      "errorMeaning": "Water DHW thermistor abnormally (THMdhwt)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "17",
+      "errorMeaning": "Auxiliary sensor 2 thermistor abnormally (THMaux2)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "18",
+      "errorMeaning": "Auxiliary sensor 1 thermistor abnormally (THMaux1)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "19",
+      "errorMeaning": "Water Plate HEX pipe thermistor abnormally (THMwohp)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "19",
+      "errorMeaning": "Suction R134a pipe thermistor abnormally (THMs)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "20",
+      "errorMeaning": "Thermistor for discharge gas temperature (THM9)",
+      "possibleSolution": "Incorrect wiring, disconnected wiring, broken cable, short circuit"
+    },
+    {
+      "errorCode": "21",
+      "errorMeaning": "Module X is in alarm state",
+      "possibleSolution": "Sub unit alarm"
+    },
+    {
+      "errorCode": "22",
+      "errorMeaning": "Thermistor for outdoor ambient temperature (THM7)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "23",
+      "errorMeaning": "Discharge R134a pipe thermistor abnormally (THMd)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "24",
+      "errorMeaning": "Thermistor for evaporating temperature (THM8)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "25",
+      "errorMeaning": "Auxiliary sensor 3 thermistor abnormally (THMaux3)",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "31",
+      "errorMeaning": "Incorrect capacity setting or combined capacity between outdoor and indoor units",
+      "possibleSolution": "Incorrect Capacity Code Setting, Excessive or Insufficient Indoor Unit Total Capacity Code"
+    },
+    {
+      "errorCode": "35",
+      "errorMeaning": "Incorrect indoor unit number setting",
+      "possibleSolution": "Duplication of indoor unit number, number of indoor units over specifications"
+    },
+    {
+      "errorCode": "36",
+      "errorMeaning": "Incorrect Indoor Unit Combination",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "40",
+      "errorMeaning": "Incorrect LCD setting",
+      "possibleSolution": "Current LCD configuration does not allow proper operation"
+    },
+    {
+      "errorCode": "45",
+      "errorMeaning": "Activation of the safety device from excessively high discharge pressure",
+      "possibleSolution": "Overload (obstruction of HEX, short circuit) mixture of inert gas, Excessive Refrigerant"
+    },
+    {
+      "errorCode": "47",
+      "errorMeaning": "Activation of the safety device from excessively low suction pressure (protection from vacuum operation)",
+      "possibleSolution": "Shortage or leakage of refrigerant, piping clogging, expansion valve close-locked, fan motor locked"
+    },
+    {
+      "errorCode": "48",
+      "errorMeaning": "Activation of overcurrent protection",
+      "possibleSolution": "Overload, overcurrent. Failure of Inverter PCB, heat exchanger clogged, locked compressor. EVI/EVO failure"
+    },
+    {
+      "errorCode": "51",
+      "errorMeaning": "Abnormal operation of the current sensor",
+      "possibleSolution": "Incorrect wiring of current sensor. Failure of control PCB or Inverter PCB"
+    },
+    {
+      "errorCode": "53",
+      "errorMeaning": "Inverter fin temperature increase",
+      "possibleSolution": "Inverter module (IPM, DIP-IPM) and Inverter PCB abnormality. Failure of compressor, clogging of heat exchanger"
+    },
+    {
+      "errorCode": "54",
+      "errorMeaning": "Abnormality of inverter fin temperature",
+      "possibleSolution": "Heat Exchanger Clogging. Fan Motor Failure"
+    },
+    {
+      "errorCode": "55",
+      "errorMeaning": "Abnormality of inverter module",
+      "possibleSolution": "Failure of DIP-IPM, IPM or Inverter PCB"
+    },
+    {
+      "errorCode": "57",
+      "errorMeaning": "Activating the protection of the fan motor",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "60",
+      "errorMeaning": "All slave units are in alarm state or there is no communication",
+      "possibleSolution": "Slave unit alarm"
+    },
+    {
+      "errorCode": "61",
+      "errorMeaning": "No Cascade Messages",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "62",
+      "errorMeaning": "Central mismatch",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "63",
+      "errorMeaning": "Transmission error between Central and indoor communication",
+      "possibleSolution": "Indoor fuse meltdown, Indoor/central connection wiring (breaking, wiring error, etc.)"
+    },
+    {
+      "errorCode": "70",
+      "errorMeaning": "Hydraulic alarm flow & Water Pump malfunction",
+      "possibleSolution": "Water flow is not detected in the hydraulic cycle or Pump defective"
+    },
+    {
+      "errorCode": "72",
+      "errorMeaning": "Thermostat Heater Alarm",
+      "possibleSolution": "High temperature is detected in Electric Heater"
+    },
+    {
+      "errorCode": "73",
+      "errorMeaning": "Mixing over-temperature limit protection for Mixed circuit",
+      "possibleSolution": "Circuit 2 supply temperature > Target temperature + offset"
+    },
+    {
+      "errorCode": "74",
+      "errorMeaning": "Unit over-temperature limit protection",
+      "possibleSolution": "Two > Tmax +5K"
+    },
+    {
+      "errorCode": "75",
+      "errorMeaning": "Freeze Protection by Cold water inlet, outlet temperature detection",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "76",
+      "errorMeaning": "Freeze Protection Stop by indoor liquid temperature thermistor",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "77",
+      "errorMeaning": "Receiver Communication failure",
+      "possibleSolution": "No Opentherm/Hlink communication for a continuous period of 10 minutes"
+    },
+    {
+      "errorCode": "78",
+      "errorMeaning": "RF Communication failure",
+      "possibleSolution": "There is no communication for 1 hour with one or two RF receivers which are bound to the RF-Bridge"
+    },
+    {
+      "errorCode": "79",
+      "errorMeaning": "Unit Capacity setting Error",
+      "possibleSolution": "There is no concordance between indoor outdoor unit capacity"
+    },
+    {
+      "errorCode": "80",
+      "errorMeaning": "LCD H-link RCS transmission error",
+      "possibleSolution": "No H-link communication for a continuous period of 1 minute between Indoor and LCD User control by connection wiring (breaking, wiring error, etc.)"
+    },
+    {
+      "errorCode": "81",
+      "errorMeaning": "Momentary Power interruption or Low voltage detected",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "100",
+      "errorMeaning": "Compressor protection",
+      "possibleSolution": "Compressor failure. This alarm code appears when alarms 02, 07, 08, 45, 47 occur three times within 6 hours."
+    },
+    {
+      "errorCode": "101",
+      "errorMeaning": "Activation of high pressure switch",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "102",
+      "errorMeaning": "Activation of protection control for excessively high pressure",
+      "possibleSolution": "Stop after P12 retry due to discharge pressure Pd ≥ 2.78 MPa continued for 10 seconds."
+    },
+    {
+      "errorCode": "104",
+      "errorMeaning": "Activation of low control",
+      "possibleSolution": "Stop after P06 retry due to Ps ≤ 0.15 MPa continued for 90 seconds."
+    },
+    {
+      "errorCode": "104",
+      "errorMeaning": "Activation of low control",
+      "possibleSolution": "Immediate stop with Ps ≤ 0.1 MPa."
+    },
+    {
+      "errorCode": "105",
+      "errorMeaning": "Excessively low pressure difference",
+      "possibleSolution": "Stop after P11 retry due to pressure ratio ε < 1.8 continued for 3 minutes."
+    },
+    {
+      "errorCode": "106",
+      "errorMeaning": "Excessively high discharge gas temperature",
+      "possibleSolution": "Td ≥ 120 ºC continued for 10 minutes, Td ≥ 140 ºC continued for 5 seconds."
+    },
+    {
+      "errorCode": "129",
+      "errorMeaning": "Failure of discharge gas pressure sensor",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector."
+    },
+    {
+      "errorCode": "130",
+      "errorMeaning": "Failure of suction gas pressure sensor",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector."
+    },
+    {
+      "errorCode": "132",
+      "errorMeaning": "Transmission error between Inverter PCB and Main PCB",
+      "possibleSolution": "Described in inverter abnormal stop control."
+    },
+    {
+      "errorCode": "134",
+      "errorMeaning": "Abnormality of Power Supply Phase",
+      "possibleSolution": "Reverse/Open Phase."
+    },
+    {
+      "errorCode": "135",
+      "errorMeaning": "Incorrect PCB Setting",
+      "possibleSolution": "Wrong DSW setting in the case of Co041."
+    },
+    {
+      "errorCode": "151",
+      "errorMeaning": "Excessively low voltage or excessively high voltage for the inverter",
+      "possibleSolution": "Described in inverter abnormal stop control."
+    },
+    {
+      "errorCode": "152",
+      "errorMeaning": "Abnormal operation of the current sensor",
+      "possibleSolution": "Described in inverter abnormal stop control."
+    },
+    {
+      "errorCode": "153",
+      "errorMeaning": "Activation of protection for inverter instantaneous over current",
+      "possibleSolution": "Described in inverter abnormal stop control."
+    },
+    {
+      "errorCode": "154",
+      "errorMeaning": "Transistor module protection activation",
+      "possibleSolution": "Described in inverter abnormal stop control."
+    },
+    {
+      "errorCode": "155",
+      "errorMeaning": "Increase in the inverter fin temperature or abnormality",
+      "possibleSolution": "Described in inverter abnormal stop control."
+    },
+    {
+      "errorCode": "156",
+      "errorMeaning": "Inverter non operation",
+      "possibleSolution": "Described in inverter abnormal stop control."
+    },
+    {
+      "errorCode": "157",
+      "errorMeaning": "Inverter Communication abnormality",
+      "possibleSolution": "Described in inverter abnormal stop control."
+    },
+    {
+      "errorCode": "b0",
+      "errorMeaning": "Incorrect setting of unit model",
+      "possibleSolution": "No setting of unit capacity or incorrect setting of unit capacity"
+    },
+    {
+      "errorCode": "b1",
+      "errorMeaning": "Incorrect setting address or refrigerant cycle",
+      "possibleSolution": "Over 64 indoor units setting by number or indoor unit address"
+    },
+    {
+      "errorCode": "b5",
+      "errorMeaning": "Incorrect setting of indoor unit number for H-LINK type",
+      "possibleSolution": "The number of indoor units connected to the H-LINK II of one system is 17 or higher"
+    },
+    {
+      "errorCode": "202",
+      "errorMeaning": "Wrong settings of PC-ARFH1E",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "203",
+      "errorMeaning": "Slave PC-ARFH1E stops answering to Master PC-ARFH1E",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    },
+    {
+      "errorCode": "204",
+      "errorMeaning": "Indoor unit stops answering to Master PC-ARFH1E",
+      "possibleSolution": "Loose, disconnected, broken or short-circuited connector"
+    }
+  ]
 }

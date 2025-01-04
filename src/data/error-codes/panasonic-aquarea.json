@@ -1,17 +1,212 @@
 {
-  "111": {
-    "code": "111",
-    "meaning": "Water outlet temperature error",
-    "solution": "Check water outlet sensor and flow"
-  },
-  "112": {
-    "code": "112",
-    "meaning": "High pressure protection",
-    "solution": "Verify system pressure and blockages"
-  },
-  "113": {
-    "code": "113",
-    "meaning": "Refrigerant leakage",
-    "solution": "Check for refrigerant leaks and repair"
-  }
+  "Error Codes": [
+    {
+      "errorCode": "H12",
+      "errorMeaning": "Inappropriate device capacities"
+    },
+    {
+      "errorCode": "H15",
+      "errorMeaning": "Fault with compressor temperature sensor"
+    },
+    {
+      "errorCode": "H20",
+      "errorMeaning": "Fault with circulation pump"
+    },
+    {
+      "errorCode": "H23",
+      "errorMeaning": "Fault with coolant sensor"
+    },
+    {
+      "errorCode": "H27",
+      "errorMeaning": "Fault with service valve"
+    },
+    {
+      "errorCode": "H28",
+      "errorMeaning": "Fault with solar sensor"
+    },
+    {
+      "errorCode": "H31",
+      "errorMeaning": "Fault with swimming pool sensor"
+    },
+    {
+      "errorCode": "H36",
+      "errorMeaning": "Fault with buffer tank sensor"
+    },
+    {
+      "errorCode": "H38",
+      "errorMeaning": "Fault due to non-matching device brands"
+    },
+    {
+      "errorCode": "H42",
+      "errorMeaning": "Low pressure protection"
+    },
+    {
+      "errorCode": "H43",
+      "errorMeaning": "Fault with the sensor for heatC 1"
+    },
+    {
+      "errorCode": "H44",
+      "errorMeaning": "Fault with the sensor for heatC 2"
+    },
+    {
+      "errorCode": "H62",
+      "errorMeaning": "Fault upstream with the flow monitor"
+    },
+    {
+      "errorCode": "H63",
+      "errorMeaning": "Fault with the low pressure sensor"
+    },
+    {
+      "errorCode": "H64",
+      "errorMeaning": "Fault with the high pressure sensor"
+    },
+    {
+      "errorCode": "H65",
+      "errorMeaning": "Fault with the water circulation during defrosting"
+    },
+    {
+      "errorCode": "H67",
+      "errorMeaning": "Fault with outdoor temperature sensor 1"
+    },
+    {
+      "errorCode": "H68",
+      "errorMeaning": "Fault with outdoor temperature sensor 2"
+    },
+    {
+      "errorCode": "H70",
+      "errorMeaning": "Fault with overload protection for indoor units E-heating element"
+    },
+    {
+      "errorCode": "H72",
+      "errorMeaning": "Fault with hot water tank temperature sensor"
+    },
+    {
+      "errorCode": "H74",
+      "errorMeaning": "Fault with PCB communication"
+    },
+    {
+      "errorCode": "H75",
+      "errorMeaning": "Low water temp. protection"
+    },
+    {
+      "errorCode": "H76",
+      "errorMeaning": "Fault with the PCB communication"
+    },
+    {
+      "errorCode": "H90",
+      "errorMeaning": "Communication fault with indoor/outdoor units"
+    },
+    {
+      "errorCode": "H91",
+      "errorMeaning": "Fault with overload protection for hot water E-heating element"
+    },
+    {
+      "errorCode": "H95",
+      "errorMeaning": "Fault with incorrect voltage IU - OU"
+    },
+    {
+      "errorCode": "H98",
+      "errorMeaning": "Fault due to high pressure protection"
+    },
+    {
+      "errorCode": "H99",
+      "errorMeaning": "Fault due to frost protection of indoor units heat exchanger"
+    },
+    {
+      "errorCode": "F12",
+      "errorMeaning": "High pressure switch in the outdoor unit triggered"
+    },
+    {
+      "errorCode": "F14",
+      "errorMeaning": "Incorrect compressor speed"
+    },
+    {
+      "errorCode": "F15",
+      "errorMeaning": "Incorrect speed of the OU fan motor"
+    },
+    {
+      "errorCode": "F16",
+      "errorMeaning": "Fault due to excessive current consumption"
+    },
+    {
+      "errorCode": "F20",
+      "errorMeaning": "Fault due to overload protection of the compressor"
+    },
+    {
+      "errorCode": "F22",
+      "errorMeaning": "Fault due to overload protection of power transistor"
+    },
+    {
+      "errorCode": "F23",
+      "errorMeaning": "Fault due to direct current peaks in the OU"
+    },
+    {
+      "errorCode": "F24",
+      "errorMeaning": "Fault due to problems in the cooling circuit"
+    },
+    {
+      "errorCode": "F25",
+      "errorMeaning": "Fault due to problems with the switching interval"
+    },
+    {
+      "errorCode": "F27",
+      "errorMeaning": "Fault with the high pressure switch in the OU"
+    },
+    {
+      "errorCode": "F29",
+      "errorMeaning": "Low hot gas superheat"
+    },
+    {
+      "errorCode": "F30",
+      "errorMeaning": "Fault with the inflow temperature sensor"
+    },
+    {
+      "errorCode": "F32",
+      "errorMeaning": "Fault with the room thermostat"
+    },
+    {
+      "errorCode": "F36",
+      "errorMeaning": "Fault with the outdoor temperature sensor"
+    },
+    {
+      "errorCode": "F37",
+      "errorMeaning": "Fault with the return flow temperature sensor"
+    },
+    {
+      "errorCode": "F40",
+      "errorMeaning": "Fault with the hot gas temp. sensor in the outdoor unit"
+    },
+    {
+      "errorCode": "F41",
+      "errorMeaning": "Error in the power factor correction"
+    },
+    {
+      "errorCode": "F42",
+      "errorMeaning": "Error with the heat exchanger sensor in the outdoor unit"
+    },
+    {
+      "errorCode": "F43",
+      "errorMeaning": "Fault with hot gas temp. sensor in the outdoor unit"
+    },
+    {
+      "errorCode": "F45",
+      "errorMeaning": "Fault with the defrost temp. sensor in the outdoor unit"
+    },
+    {
+      "errorCode": "F46",
+      "errorMeaning": "Current transformer switching off"
+    },
+    {
+      "errorCode": "F48",
+      "errorMeaning": "Error with evaporator outlet temp. sensor"
+    },
+    {
+      "errorCode": "F49",
+      "errorMeaning": "Fault with bypass outlet temp. sensor in the OU"
+    },
+    {
+      "errorCode": "F95",
+      "errorMeaning": "Fault due to HP protection cooling in the outdoor unit"
+    }
+  ]
 }

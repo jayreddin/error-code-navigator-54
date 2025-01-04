@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Moon, Sun } from 'lucide-react';
-import { Card } from './ui/card';
-import { Input } from './ui/input';
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Moon, Sun } from "lucide-react";
+import { Card } from "./ui/card";
+import { Input } from "./ui/input";
 
 interface ButtonPageProps {
   title: string;
@@ -15,10 +15,10 @@ interface ErrorCode {
 }
 
 const ButtonPage = ({ title }: ButtonPageProps) => {
-  const [theme, setTheme] = useState<'light' | 'dark'>(
-    localStorage.getItem('theme') as 'light' | 'dark' || 'light'
+  const [theme, setTheme] = useState<"light" | "dark">(
+    (localStorage.getItem("theme") as "light" | "dark") || "light",
   );
-  const [searchCode, setSearchCode] = useState('');
+  const [searchCode, setSearchCode] = useState("");
   const [errorDetails, setErrorDetails] = useState<ErrorCode[]>([]);
   const [errorCodes, setErrorCodes] = useState<Record<string, ErrorCode>>({});
   const location = useLocation();
@@ -31,7 +31,7 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
         const response = await import(`../data/error-codes/${routeName}.json`);
         setErrorCodes(response.default);
       } catch (error) {
-        console.error('Error loading error codes:', error);
+        console.error("Error loading error codes:", error);
       }
     };
 
@@ -39,23 +39,23 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
   }, [location]);
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
-    localStorage.setItem('theme', theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   const handleSearch = (value: string) => {
     setSearchCode(value);
     if (value) {
-      const matchingCodes = Object.values(errorCodes).filter(error => 
-        error.code.startsWith(value)
+      const matchingCodes = Object.values(errorCodes).filter((error) =>
+        error.code.startsWith(value),
       );
       setErrorDetails(matchingCodes);
     } else {
@@ -70,7 +70,7 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
         className="theme-toggle"
         aria-label="Toggle theme"
       >
-        {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+        {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
       </button>
 
       <h1 className="header">{title}</h1>
@@ -93,9 +93,14 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
         />
 
         {errorDetails.map((error) => (
-          <Card key={error.code} className="p-6 bg-secondary/50 border-[hsl(var(--button-border))] border">
+          <Card
+            key={error.code}
+            className="p-6 bg-secondary/50 border-[hsl(var(--button-border))] border"
+          >
             <div className="space-y-4 text-center">
-              <h2 className="text-lg font-semibold border-b pb-2">Error Code: {error.code}</h2>
+              <h2 className="text-lg font-semibold border-b pb-2">
+                Error Code: {error.code}
+              </h2>
               <div className="space-y-4">
                 <div>
                   <h3 className="font-semibold mb-1">Meaning:</h3>
