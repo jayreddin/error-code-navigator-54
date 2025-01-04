@@ -64,15 +64,15 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
 
       <h1 className="header">{title}</h1>
 
-      <Link to="/" className="nav-button">
-        Home
-      </Link>
-
-      <Link to="/pdf-files" className="nav-button mb-8">
-        PDF Files
-      </Link>
-
       <div className="w-full max-w-md">
+        <Link to="/" className="nav-button w-full block">
+          Home
+        </Link>
+
+        <Link to="/pdf-files" className="nav-button w-full block mb-8">
+          PDF Files
+        </Link>
+
         <Input
           type="number"
           value={searchCode}
