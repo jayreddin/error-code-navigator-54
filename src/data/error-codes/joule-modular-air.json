@@ -1,17 +1,148 @@
+
 {
+  "10": {
+    "code": "10",
+    "meaning": "Water Pressure low, < 0.8 bar",
+    "solution": "Increase water pressure"
+  },
+  "20": {
+    "code": "20",
+    "meaning": "Filter reached end of lifespan",
+    "solution": "Replace the Air Filter"
+  },
+  "80": {
+    "code": "80",
+    "meaning": "No temperature difference across the condenser",
+    "solution": "Check the circulating pump operation, possible air in the system."
+  },
+  "81": {
+    "code": "81",
+    "meaning": "No temperature difference across the evaporator",
+    "solution": "Check the fan operation, possible blockage in the duct system."
+  },
+  "AP2": {
+    "code": "AP2",
+    "meaning": "The average central heating temperature is higher than 60\u00b0C.",
+    "solution": "Action is not necessary. The device will reboot within 35 minutes."
+  },
+  "AP3": {
+    "code": "AP3",
+    "meaning": "The freeze protection is active.",
+    "solution": ""
+  },
+  "AP4": {
+    "code": "AP4",
+    "meaning": "Pause mode - the compressor must not be started yet.",
+    "solution": ""
+  },
+  "12": {
+    "code": "12",
+    "meaning": "No communication with the room thermostat",
+    "solution": "Check electrical connections. Check the thermostat is operating correctly"
+  },
+  "13": {
+    "code": "13",
+    "meaning": "No communication with the boiler",
+    "solution": "Check electrical connections. Check the boiler is operating correctly"
+  },
+  "30": {
+    "code": "30",
+    "meaning": "Top tank temperature sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "31": {
+    "code": "31",
+    "meaning": "Bottom tank temperature sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "32": {
+    "code": "32",
+    "meaning": "Back up heater water heater temperature sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "33": {
+    "code": "33",
+    "meaning": "Air-In sensor error - Green Comfort Module",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "34": {
+    "code": "34",
+    "meaning": "Air-Out sensor error - Green Comfort Module",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "35": {
+    "code": "35",
+    "meaning": "Airflow sensor error - Green Comfort Module",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "36": {
+    "code": "36",
+    "meaning": "Frost protection active - Green Comfort Module",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "37": {
+    "code": "37",
+    "meaning": "Lost connection with Green Comfort Module",
+    "solution": "Check cable. Replace if necessary"
+  },
+  "51": {
+    "code": "51",
+    "meaning": "Air-In sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "52": {
+    "code": "52",
+    "meaning": "Air-Out sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "53": {
+    "code": "53",
+    "meaning": "Evaporator sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "54": {
+    "code": "54",
+    "meaning": "HP Return sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "55": {
+    "code": "55",
+    "meaning": "HP Supply sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "56": {
+    "code": "56",
+    "meaning": "Hot Gas sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "60": {
+    "code": "60",
+    "meaning": "Airflow sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
+  "70": {
+    "code": "70",
+    "meaning": "Water pressure sensor error",
+    "solution": "Check sensor. Replace if necessary"
+  },
   "71": {
     "code": "71",
-    "meaning": "Fan motor error",
-    "solution": "Check fan motor and replace if faulty"
+    "meaning": "Back up heater protection active",
+    "solution": "Check sensor. Replace if necessary"
   },
-  "72": {
-    "code": "72",
-    "meaning": "Indoor air sensor fault",
-    "solution": "Inspect and replace indoor air sensor if needed"
+  "90": {
+    "code": "90",
+    "meaning": "Compressor locked (repeated error 80)",
+    "solution": "Remove error 80"
   },
-  "73": {
-    "code": "73",
-    "meaning": "Module communication error",
-    "solution": "Verify module connections and wiring"
+  "94": {
+    "code": "94",
+    "meaning": "Compressor locked (repeated error 81)",
+    "solution": "Remove error 81"
+  },
+  "95": {
+    "code": "95",
+    "meaning": "Water pressure is critically low (< 0.3 bar).",
+    "solution": "Increase water pressure"
   }
 }

@@ -54,9 +54,11 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
   const handleSearch = (value: string) => {
     setSearchCode(value);
     if (value) {
-      const matchingCodes = Object.values(errorCodes).filter((error) =>
-        error.code.startsWith(value),
-      );
+      const searchTerm = value.toLowerCase().replace(/\s+/g, "");
+      const matchingCodes = Object.values(errorCodes).filter((error) => {
+        const errorCode = error.code.toLowerCase().replace(/\s+/g, "");
+        return errorCode.includes(searchTerm) || searchTerm.includes(errorCode);
+      });
       setErrorDetails(matchingCodes);
     } else {
       setErrorDetails([]);
@@ -85,7 +87,7 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
         </Link>
 
         <Input
-          type="number"
+          type="text"
           value={searchCode}
           onChange={(e) => handleSearch(e.target.value)}
           placeholder="Enter error code"

@@ -1,17 +1,222 @@
 {
-  "131": {
-    "code": "131",
-    "meaning": "Compressor temperature too high",
-    "solution": "Check compressor cooling and operation"
+  "E1011": {
+    "code": "E1011",
+    "meaning": "Communication error between the indoor and outdoor unit (when indoor unit cannot receive signals)",
+    "solution": "Check COMM KIT and outdoor unit connections"
   },
-  "132": {
-    "code": "132",
-    "meaning": "Evaporator temperature sensor error",
-    "solution": "Verify evaporator sensor connections"
+  "E1091": {
+    "code": "E1091",
+    "meaning": "Communication error due to indoor unit address incomplete",
+    "solution": "Verify indoor unit address settings"
   },
-  "133": {
-    "code": "133",
-    "meaning": "Communication error",
-    "solution": "Check communication cables and connections"
+  "E1111": {
+    "code": "E1111",
+    "meaning": "Modbus communication error (when COMM KIT cannot receive signals)",
+    "solution": "Check COMM KIT connections"
+  },
+  "E1623": {
+    "code": "E1623",
+    "meaning": "EEPROM H/W error",
+    "solution": "Replace or service EEPROM"
+  },
+  "E1771": {
+    "code": "E1771",
+    "meaning": "Emergency error",
+    "solution": "Contact service provider"
+  },
+  "E2011": {
+    "code": "E2011",
+    "meaning": "COMM KIT/OUTDOOR UNIT communication error (matching error)",
+    "solution": "Check compatibility of COMM KIT and outdoor unit"
+  },
+  "E2021": {
+    "code": "E2021",
+    "meaning": "COMM KIT/OUTDOOR UNIT communication error (3 min)",
+    "solution": "Verify connections and restart units"
+  },
+  "E2031": {
+    "code": "E2031",
+    "meaning": "Communication error between INVERTER and MAIN MICOM (6 min)",
+    "solution": "Inspect inverter and main micom connections"
+  },
+  "E2211": {
+    "code": "E2211",
+    "meaning": "OUTDOOR UNIT temperature sensor error",
+    "solution": "Check and replace outdoor unit temperature sensor"
+  },
+  "E2311": {
+    "code": "E2311",
+    "meaning": "Condenser temperature sensor error",
+    "solution": "Inspect and replace condenser temperature sensor"
+  },
+  "E2511": {
+    "code": "E2511",
+    "meaning": "Discharge temperature sensor error",
+    "solution": "Check discharge temperature sensor and connections"
+  },
+  "E3201": {
+    "code": "E3201",
+    "meaning": "OLP sensor error",
+    "solution": "Check OLP sensor functionality"
+  },
+  "E4031": {
+    "code": "E4031",
+    "meaning": "Detection of OUTDOOR UNIT compressor freezing (during cooling operation)",
+    "solution": "Inspect outdoor unit for ice buildup"
+  },
+  "E4041": {
+    "code": "E4041",
+    "meaning": "Protection of OUTDOOR UNIT when it is overload (during Safety start, Normal operation state)",
+    "solution": "Check for overload conditions"
+  },
+  "E4071": {
+    "code": "E4071",
+    "meaning": "Comp down due to high pressure",
+    "solution": "Inspect system for pressure issues"
+  },
+  "E4162": {
+    "code": "E4162",
+    "meaning": "Discharge of compressor is overheated",
+    "solution": "Allow compressor to cool and check for blockages"
+  },
+  "E4252": {
+    "code": "E4252",
+    "meaning": "Power source line missing error (only for 3-phase models)",
+    "solution": "Check power supply connections"
+  },
+  "E4401": {
+    "code": "E4401",
+    "meaning": "Heating operation blocked (outdoor temperature over 35°C)",
+    "solution": "Wait for outdoor temperature to drop"
+  },
+  "E4411": {
+    "code": "E4411",
+    "meaning": "Cooling operation blocked (outdoor temperature below 9°C)",
+    "solution": "Wait for outdoor temperature to rise"
+  },
+  "E4582": {
+    "code": "E4582",
+    "meaning": "OUTDOOR UNIT fan 1 error",
+    "solution": "Check fan 1 connections and functionality"
+  },
+  "E4612": {
+    "code": "E4612",
+    "meaning": "[Inverter] Compressor startup error",
+    "solution": "Inspect inverter and compressor connections"
+  },
+  "E4622": {
+    "code": "E4622",
+    "meaning": "[Inverter] Total current error/PFC over current error",
+    "solution": "Check current flow and PFC settings"
+  },
+  "E4632": {
+    "code": "E4632",
+    "meaning": "OLP is overheated",
+    "solution": "Allow OLP to cool and check for blockages"
+  },
+  "E4642": {
+    "code": "E4642",
+    "meaning": "[Inverter] IPM over current error",
+    "solution": "Inspect inverter for overcurrent conditions"
+  },
+  "E4652": {
+    "code": "E4652",
+    "meaning": "Compressor V limit error",
+    "solution": "Check compressor voltage limits"
+  },
+  "E4661": {
+    "code": "E4661",
+    "meaning": "[Inverter] DC LINK over/low voltage error",
+    "solution": "Inspect DC link connections and voltage levels"
+  },
+  "E4672": {
+    "code": "E4672",
+    "meaning": "[Inverter] Compressor rotation error",
+    "solution": "Check compressor rotation direction"
+  },
+  "E4682": {
+    "code": "E4682",
+    "meaning": "[Inverter] Current sensor error",
+    "solution": "Inspect current sensor functionality"
+  },
+  "E4692": {
+    "code": "E4692",
+    "meaning": "[Inverter] DC LINK voltage sensor error",
+    "solution": "Check DC link voltage sensor connections"
+  },
+  "E4703": {
+    "code": "E4703",
+    "meaning": "Outdoor unit EEPROM Read/Write error",
+    "solution": "Replace or service EEPROM"
+  },
+  "E4713": {
+    "code": "E4713",
+    "meaning": "Outdoor unit EEPROM Read/Write error (OTP error)",
+    "solution": "Replace or service EEPROM"
+  },
+  "E4741": {
+    "code": "E4741",
+    "meaning": "IPM(IGBT Module) or PFCM temperature sensor error",
+    "solution": "Inspect and replace as necessary"
+  },
+  "E4752": {
+    "code": "E4752",
+    "meaning": "OUTDOOR UNIT fan 2 error",
+    "solution": "Check fan 2 connections and functionality"
+  },
+  "E4831": {
+    "code": "E4831",
+    "meaning": "H/W DC_Link over voltage error",
+    "solution": "Inspect DC link connections and voltage levels"
+  },
+  "E4841": {
+    "code": "E4841",
+    "meaning": "PFC overload error",
+    "solution": "Check PFC settings and connections"
+  },
+  "E4851": {
+    "code": "E4851",
+    "meaning": "Input current sensor error",
+    "solution": "Inspect input current sensor functionality"
+  },
+  "E4882": {
+    "code": "E4882",
+    "meaning": "AC input voltage sensor error",
+    "solution": "Check AC input voltage sensor connections"
+  },
+  "E5002": {
+    "code": "E5002",
+    "meaning": "IPM is overheated",
+    "solution": "Allow IPM to cool and check for blockages"
+  },
+  "E5542": {
+    "code": "E5542",
+    "meaning": "Gas leak error",
+    "solution": "Inspect for gas leaks and repair"
+  },
+  "E5901": {
+    "code": "E5901",
+    "meaning": "Inverter EEPROM CheckSum error",
+    "solution": "Replace or service EEPROM"
+  },
+  "E9011": {
+    "code": "E9011",
+    "meaning": "Water inlet (PHE) temperature sensor error (open/short)",
+    "solution": "Check water inlet temperature sensor"
+  },
+  "E9021": {
+    "code": "E9021",
+    "meaning": "Water outlet (PHE) temperature sensor error (open/short)",
+    "solution": "Check water outlet temperature sensor"
+  },
+  "E9061": {
+    "code": "E9061",
+    "meaning": "Refrigerant gas inlet (PHE) temperature sensor (open/short)",
+    "solution": "Check refrigerant gas inlet temperature sensor"
+  },
+  "E9114": {
+    "code": "E9114",
+    "meaning": "Flow switch OFF Error",
+    "solution": "Check flow switch and ensure it is operational"
   }
 }
