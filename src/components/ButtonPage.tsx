@@ -26,7 +26,6 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
   useEffect(() => {
     const loadErrorCodes = async () => {
       try {
-        // Get the current route name from the location
         const routeName = location.pathname.slice(1);
         const response = await import(`../data/error-codes/${routeName}.json`);
         setErrorCodes(response.default);
@@ -54,11 +53,17 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
   const handleSearch = (value: string) => {
     setSearchCode(value);
     if (value) {
-        const searchTerm = value.toLowerCase().replace(/\s+/g, '');
-        const matchingCodes = Object.values(errorCodes).filter((error) => {
-          const errorCode = error.code.toLowerCase().replace(/\s+/g, '');
-          return errorCode.includes(searchTerm) || searchTerm.includes(errorCode);
-        });
+<<<<<<< HEAD
+      const searchTerm = value.toLowerCase().replace(/\s+/g, "");
+      const matchingCodes = Object.values(errorCodes).filter((error) => {
+        const errorCode = error.code.toLowerCase().replace(/\s+/g, "");
+=======
+      const searchTerm = value.toLowerCase().replace(/\s+/g, '');
+      const matchingCodes = Object.values(errorCodes).filter((error) => {
+        const errorCode = error.code.toLowerCase().replace(/\s+/g, '');
+>>>>>>> 2bfa29f735ab502a3413098f6c892ca7c079aae4
+        return errorCode.includes(searchTerm) || searchTerm.includes(errorCode);
+      });
       setErrorDetails(matchingCodes);
     } else {
       setErrorDetails([]);
