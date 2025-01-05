@@ -55,7 +55,8 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
     setSearchCode(value);
     if (value) {
       const matchingCodes = Object.values(errorCodes).filter((error) =>
-      error.code.toLowerCase().startsWith(value.toLowerCase()),
+                                                              error.code.toLowerCase().startsWith(value.toLowerCase())
+                                                             ,
       );
       setErrorDetails(matchingCodes);
     } else {
@@ -85,7 +86,7 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
         </Link>
 
         <Input
-          type="text"
+          type="number"
           value={searchCode}
           onChange={(e) => handleSearch(e.target.value)}
           placeholder="Enter error code"
