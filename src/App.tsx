@@ -2,7 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// Change this line:
+import { HashRouter, Routes, Route } from "react-router-dom"; // Use HashRouter instead of BrowserRouter
 import Index from "./pages/Index";
 import ButtonPage from "./components/ButtonPage";
 
@@ -30,7 +31,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* Change BrowserRouter to HashRouter here */}
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/pdf-files" element={<ButtonPage title="PDF Files" />} />
@@ -38,7 +40,7 @@ const App = () => (
             <Route key={index} path={route.path} element={route.element} />
           ))}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
