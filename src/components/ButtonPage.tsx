@@ -53,15 +53,9 @@ const ButtonPage = ({ title }: ButtonPageProps) => {
   const handleSearch = (value: string) => {
     setSearchCode(value);
     if (value) {
-<<<<<<< HEAD
       const searchTerm = value.toLowerCase().replace(/\s+/g, "");
       const matchingCodes = Object.values(errorCodes).filter((error) => {
         const errorCode = error.code.toLowerCase().replace(/\s+/g, "");
-=======
-      const searchTerm = value.toLowerCase().replace(/\s+/g, '');
-      const matchingCodes = Object.values(errorCodes).filter((error) => {
-        const errorCode = error.code.toLowerCase().replace(/\s+/g, '');
->>>>>>> 2bfa29f735ab502a3413098f6c892ca7c079aae4
         return errorCode.includes(searchTerm) || searchTerm.includes(errorCode);
       });
       setErrorDetails(matchingCodes);
